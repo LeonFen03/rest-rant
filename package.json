@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express-react-views": "^0.11.0",
     "nodemon": "^3.0.1",
+    "react": "^18.2.0",
     "router": "^1.3.8"
   }
 }
