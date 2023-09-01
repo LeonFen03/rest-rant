@@ -7,7 +7,6 @@ router.get('/', (req, res) => {
             res.render('places/index', { places })
         })
         .catch(err => {
-            console.log('err', err)
             res.render('error404')
         })
 })
@@ -18,16 +17,7 @@ router.post('/', (req, res) => {
             res.redirect('/places')
         })
         .catch(err => {
-            if (err && err.name == 'ValidationError') {
-                let message = 'Validation Error: '
-                for (var field in err.errors) {
-                    message += `${field} was ${err.errors[field].value}. ${err.errors[field].message}\n`
-                }
-                res.render('places/new', { message })
-            }
-            else {
                 res.render('error404')
-            }
         })
 })
 
@@ -42,7 +32,6 @@ router.get('/:id', (req, res) => {
             res.render('places/show', { place })
         })
         .catch(err => {
-            console.log('err', err)
             res.render('error404')
         })
 })
@@ -53,7 +42,6 @@ router.put('/:id', (req, res) => {
             res.redirect(`/places/${req.params.id}`)
         })
         .catch(err => {
-            console.log('err', err)
             res.render('error404')
         })
 })
