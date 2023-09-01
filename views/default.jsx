@@ -4,6 +4,7 @@ function Def (html) {
     return (
         <html>
             <head>
+<<<<<<< HEAD
                 <title>RestRant Live Demo</title>
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossOrigin="anonymous" />
                 <link rel="stylesheet" href="/css/style.css"/>
@@ -26,10 +27,20 @@ function Def (html) {
                         </li>
                     </ul>
                 </nav>
+=======
+                <title>Title</title>
+            </head>
+            <body>
+>>>>>>> 834a728964c18fec0ea03891f3813e93c6e001fc
                 {html.children}
             </body>
         </html>
     )
+<<<<<<< HEAD
 }
 
 module.exports = Def
+=======
+  }
+module.exports = Def;  
+>>>>>>> 834a728964c18fec0ea03891f3813e93c6e001fc

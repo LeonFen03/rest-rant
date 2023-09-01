@@ -1,6 +1,7 @@
 const React = require('react')
 const Def = require('./default')
 
+<<<<<<< HEAD
 function error404 () {
     return (
         <Def>
@@ -14,3 +15,19 @@ function error404 () {
 }
 
 module.exports = error404
+=======
+
+function error404 () {
+    return (
+      <Def>
+          <main>
+              <h1>404: PAGE NOT FOUND</h1>
+              <p>We can't find this page!</p>
+          </main>
+      </Def>
+    )
+  }
+  
+
+module.exports = error404;
+>>>>>>> 834a728964c18fec0ea03891f3813e93c6e001fc
