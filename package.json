@@ -2,7 +2,7 @@
   "name": "project-REST-rant",
   "version": "1.0.0",
   "engines": {
-    "node": "16.11.1"
+    "node": "v18.16.0"
   },
   "description": "",
   "main": "index.js",
